@@ -118,7 +118,7 @@ function Puzzle() {
       {/* Dialog box that appears after puzzle is solved */}
       {isSolved && (
         <div className="mt-6 bg-green-200 text-green-800 py-4 px-6 rounded-lg shadow-lg">
-          <h3 className="text-xl font-semibold">Looking like a angel 😍</h3>
+          <h3 className="text-xl font-semibold">Looking like an angel 😍</h3>
         </div>
       )}
     </div>
