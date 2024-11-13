@@ -79,7 +79,7 @@ function Puzzle() {
 
       {/* Puzzle grid with animations */}
       <div
-        className="grid gap-1"
+        className="grid gap-0"
         style={{
           display: 'grid',
           gridTemplateColumns: `repeat(${GRID_COLUMNS}, 1fr)`,
@@ -91,7 +91,7 @@ function Puzzle() {
         {pieces.map((pieceIndex, idx) => (
           <div
             key={idx}
-            className={`bg-cover bg-center transition-all duration-700 ease-in-out`}  // Slower animation (700ms)
+            className={`bg-cover bg-center transition-all duration-700 ease-in-out border border-gray-300`}  // Slower animation (700ms)
             style={{
               height: '100px',  // Adjust for bigger boxes
               backgroundImage: imageLoaded ? `url(${imageURL})` : 'none', // Only set background once the image is loaded
